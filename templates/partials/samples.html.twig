@@ -1,0 +1,10 @@
+<div>
+  <h3>Site Login</h3>
+  <hr>
+  {% if config.plugins.login.enabled and grav.user.username %}
+    </p><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</p>
+  {% else %}
+    <p><a href="/login">Login</a></p>
+  {% endif %}
+  <!-- <a href="admin.php">Login to Admin</a> -->
+</div>

@@ -1,0 +1,38 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  <div class="contentbox {{ page.header.class }}">
+    {{ page.content }}
+
+    <div>
+      {% for child in page.collection %}
+        <div class="minipage-wide">
+          <div class="iconholder2">
+            <a href="{{child.url}}">
+              <img src="{{ child.url }}/mini-icon.svg">
+            </a>
+          </div>
+          <div class="textholder">
+            <h3><a href="{{child.url}}">{{ child.title }}</a></h3>
+            <p>{{ child.summary }}</p>
+            <ul>
+              {% for subchild in child.collection %}
+                <li>
+                  <a href="{{ subchild.url }}">{{ subchild.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+
+            <ul>
+              {% for listeditem in child.header.examples %}
+                <li>{{ listeditem }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+{% endblock %}

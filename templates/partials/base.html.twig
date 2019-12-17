@@ -1,0 +1,103 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('user://pages/images/favicon-32x32.png') }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ url('user://pages/images/favicon-16x16.png') }}" sizes="16x16" />
+
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('http://yui.yahooapis.com/pure/0.6.0/pure-min.css', 100) %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', 99) %}
+        {% do assets.addCss('theme://css/styles.css', 98) %}
+        {% do assets.addCss('theme://css/custom.css', 97) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 100) %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head %}
+</head>
+<body>
+
+{% block body %}
+        <div class="paper">
+
+          {% block header %}
+              <div class="header">
+                <div class="headerlogo">
+                  <a href="{{ base_url == '' ? '/' : base_url }}">
+                    <img src="{{ base_url_relative }}/user/pages/images/logo.svg" alt="logo"/> <!-- {{ config.site.title }} -->  </a>
+                </div>
+                <div class="headerinfo">
+                  <h4><a href="tel:+1-{{ config.site.phone }}">{{ config.site.phone }}</a></h4>
+                  <h4>{{ config.site.address_01 }}<br>
+                     {{ config.site.address_02 }}</h4>
+                </div>
+              </div>
+          {% endblock %}
+
+          {% block header_navigation %}
+            <nav class="main-nav"> {% include 'partials/navigation.html.twig' %}
+            </nav>
+          {% endblock %}
+
+          {% if config.plugins.login.enabled and grav.user.username %}
+           {% for mitem in site.loginmenu %}
+             <div class="widebutton">
+              <a href="{{ mitem.url }}">
+                 {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
+                 {{ mitem.text }}
+              </a>
+             </div>
+           {% endfor %}
+          {% endif %}
+
+          <div class="md">
+            {% block content %}
+            {% endblock %}
+          </div>
+
+          {% if page.header.clients %}    <BR><hr><BR>
+            <div class="clientlogos">
+              <h1>Some of Our Clients</h1>
+              <div class="chomp4">
+                {% for item in page.header.clients %}
+                  <div class="miniclear">
+                    <img src="{{ page_url }}{{ item.image }}" alt="{{ item.alt }}">
+                  </div>
+                {% endfor %}
+              </div>
+              </div>
+          {% endif %}
+
+        </div>
+{% endblock %}
+
+
+{% block footer %}
+    <div class="acrylic centertext">
+      <div>
+        <p>American Diversity - Valdosta, GA</p> <BR>
+      </div>
+    </div>
+{% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom') }}
+{% endblock %}
+
+</body>
+</html>
