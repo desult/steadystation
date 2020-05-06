@@ -17,25 +17,15 @@ p {           line-height: 1.4em;}
 
 .paper {              background-color: $snow;
                       margin: 20px auto;
-                      padding: 2px 0px 60px 0px;
+                      padding: 0px 0px 20px 0px;
                       width: 900px;
-                      border-top-right-radius: 50px;
-                      box-shadow: 1px 10px 15px hsla($hue01, 5, 10, .4);
-                      background-image: url("../images/bg-pinstripe.png"), linear-gradient(to right, hsl($hue01, 0, 96), hsl($hue01, 0, 93));}
+                      border-radius: 4px;
+                      box-shadow: 1px 10px 15px hsla($hue01, 5, 10, .4); }
+
 .acrylic {            color: $snow;
                       margin: 20px auto;
                       padding: 20px;
                       width: 900px;}
-
-.chomp2 {             display: grid;
-                      grid-template-columns: 1fr 1fr;}
-.chomp3 {             display: grid;
-                      grid-template-columns: 1fr 1fr 1fr;}
-.chomp4 {             display: grid;
-                      grid-template-columns: repeat(4, 1fr);
-                      // border: 2px solid green;
-                      grid-column-gap: 60px;}
-
 
 .minipage {           background-color: white;
                       margin: 5px;
@@ -102,7 +92,7 @@ p {           line-height: 1.4em;}
 .main-nav ul li.selected > a {    background-color: hsl($hue02, 50, 45);
                                    color: white; }
 
-.md {                 padding: 20px;}
+.md {                 padding: 20px 60px;}
 .md img {             max-width: 300px;}
 .md h1 {              text-align: center;
                       font-family: "camboregular"}
@@ -186,14 +176,15 @@ float-left {        float: left;}
 .map {        height: 400px;} }
 
 @media only screen and (max-width: 700px) {
-.chomp3 {     grid-template-columns: 1fr 1fr; }
 .md iframe {  width: 100%;} }
 
 @media only screen and (max-width: 500px) {
-h1 {         font-size: 1.5em; }
-h2 {         font-size: 1.3em; }
-.map {        height: 300px; }
-.main-nav ul{ flex-direction: column; }
-.header img { width: 250px; }
-.chomp2 {     grid-template-columns: 1fr; }
-.chomp3 {     grid-template-columns: 1fr; } }
+h1 {           font-size: 1.5em; }
+h2 {           font-size: 1.3em; }
+.paper {       width: 98%;
+               margin-top: 6px;  }
+.acrylic {     width: 98%;}
+.map {         height: 300px; }
+.main-nav ul{  flex-direction: column; }
+.header img {  width: 250px; }
+.md {          padding: 10px 20px;} }

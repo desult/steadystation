@@ -39,7 +39,9 @@
 
 
 <body>
-{% block body %}
+
+
+{% block main %}
     <div class="paper">
 
       {% block header %}
@@ -61,43 +63,37 @@
         </nav>
       {% endblock %}
 
+
+      <!-- Login Menu (Not used)
+      Left it here so I could see how the code was written. This is a feature I want to reimplament.
       {% if config.plugins.login.enabled and grav.user.username %}
        {% for mitem in site.loginmenu %}
          <div class="widebutton">
           <a href="{{ mitem.url }}">
-             {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
+             {% if mitem.icon %}
+                <i class="fa fa-{{ mitem.icon }}"></i>
+             {% endif %}
              {{ mitem.text }}
           </a>
          </div>
        {% endfor %}
       {% endif %}
+      -->
+
 
       <div class="md">
         {% block content %}
         {% endblock %}
       </div>
 
-      {% if page.header.clients %}    <BR><hr><BR>
-        <div class="clientlogos">
-          <h1>Some of Our Clients</h1>
-          <div class="chomp4">
-            {% for item in page.header.clients %}
-              <div class="miniclear">
-                <img src="{{ page_url }}{{ item.image }}" alt="{{ item.alt }}">
-              </div>
-            {% endfor %}
-          </div>
-          </div>
-      {% endif %}
-
     </div>
-{% endblock body %}
+{% endblock main %}
 
 
 {% block footer %}
     <div class="acrylic centertext">
       <div>
-        <p>American Diversity - Valdosta, GA</p> <BR>
+        <p> {{ config.site.footer }} </p> <BR>
       </div>
     </div>
 {% endblock %}
@@ -109,4 +105,6 @@
 
 
 </body>
+
+
 </html>
