@@ -1,6 +1,7 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+
 <head>
 {% block head %}
     <meta charset="utf-8" />
@@ -27,64 +28,64 @@
         {% do assets.addJs('jquery', 100) %}
     {% endblock %}
     {{ assets.js() }}
-
 {% endblock head %}
 </head>
+
+
 <body>
-
 {% block body %}
-        <div class="paper">
+    <div class="paper">
 
-          {% block header %}
-              <div class="header">
-                <div class="headerlogo">
-                  <a href="{{ base_url == '' ? '/' : base_url }}">
-                    <img src="{{ base_url_relative }}/user/pages/images/logo.svg" alt="logo"/> <!-- {{ config.site.title }} -->  </a>
-                </div>
-                <div class="headerinfo">
-                  <h4><a href="tel:+1-{{ config.site.phone }}">{{ config.site.phone }}</a></h4>
-                  <h4>{{ config.site.address_01 }}<br>
-                     {{ config.site.address_02 }}</h4>
-                </div>
-              </div>
-          {% endblock %}
-
-          {% block header_navigation %}
-            <nav class="main-nav"> {% include 'partials/navigation.html.twig' %}
-            </nav>
-          {% endblock %}
-
-          {% if config.plugins.login.enabled and grav.user.username %}
-           {% for mitem in site.loginmenu %}
-             <div class="widebutton">
-              <a href="{{ mitem.url }}">
-                 {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
-                 {{ mitem.text }}
-              </a>
-             </div>
-           {% endfor %}
-          {% endif %}
-
-          <div class="md">
-            {% block content %}
-            {% endblock %}
+      {% block header %}
+          <div class="header">
+            <div class="headerlogo">
+              <a href="{{ base_url == '' ? '/' : base_url }}">
+                <img src="{{ base_url_relative }}/user/pages/images/logo.svg" alt="logo"/> <!-- {{ config.site.title }} -->  </a>
+            </div>
+            <div class="headerinfo">
+              <h4><a href="tel:+1-{{ config.site.phone }}">{{ config.site.phone }}</a></h4>
+              <h4>{{ config.site.address_01 }}<br>
+                 {{ config.site.address_02 }}</h4>
+            </div>
           </div>
+      {% endblock %}
 
-          {% if page.header.clients %}    <BR><hr><BR>
-            <div class="clientlogos">
-              <h1>Some of Our Clients</h1>
-              <div class="chomp4">
-                {% for item in page.header.clients %}
-                  <div class="miniclear">
-                    <img src="{{ page_url }}{{ item.image }}" alt="{{ item.alt }}">
-                  </div>
-                {% endfor %}
-              </div>
-              </div>
-          {% endif %}
+      {% block header_navigation %}
+        <nav class="main-nav"> {% include 'partials/navigation.html.twig' %}
+        </nav>
+      {% endblock %}
 
-        </div>
-{% endblock %}
+      {% if config.plugins.login.enabled and grav.user.username %}
+       {% for mitem in site.loginmenu %}
+         <div class="widebutton">
+          <a href="{{ mitem.url }}">
+             {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
+             {{ mitem.text }}
+          </a>
+         </div>
+       {% endfor %}
+      {% endif %}
+
+      <div class="md">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      {% if page.header.clients %}    <BR><hr><BR>
+        <div class="clientlogos">
+          <h1>Some of Our Clients</h1>
+          <div class="chomp4">
+            {% for item in page.header.clients %}
+              <div class="miniclear">
+                <img src="{{ page_url }}{{ item.image }}" alt="{{ item.alt }}">
+              </div>
+            {% endfor %}
+          </div>
+          </div>
+      {% endif %}
+
+    </div>
+{% endblock body %}
 
 
 {% block footer %}
@@ -95,9 +96,11 @@
     </div>
 {% endblock %}
 
+
 {% block bottom %}
     {{ assets.js('bottom') }}
 {% endblock %}
+
 
 </body>
 </html>
