@@ -7,6 +7,8 @@
                       line-height: normal;
                       box-sizing: border-box; }
 
+h1, h2, h3, h4, h5 {  font-weight: normal; }
+
 body {                background-image: url("../images/bg-stars.png"), linear-gradient(to right, hsl($hue01, 40, 30), hsl($hue01, 30, 50));
                       background-attachment: fixed;
                       color: $textcolor; }
@@ -79,6 +81,8 @@ p {                   line-height: 1.4em;}
 
 .contact {                 padding: 20px 60px; }
 .contact img {             max-width: 300px; }
+.contact br {              height: 0px;
+                           line-height: 0px;}
 .contact h1 {              text-align: center;
                            font-family: "epilogue";
                            font-size: 2.5em;
@@ -87,9 +91,21 @@ p {                   line-height: 1.4em;}
                            line-height: 1;
                            color: $snow;
                            background: $swatch02; }
-.contact h2 {              font-size: 2em;
+
+.contact h2 {              background: $swatch04;
+                           color: $snow;
+                           font-size: 2em;
+                           line-height: 1em;
+                           padding: 10px 20px;
                            font-variation-settings: "slnt" 0, "wght" 600;}
-.contact h3 {              margin: 0px; }
+
+.contact h3 {              color: $swatch03;
+                           margin: 50px 0px 0px 0px;
+                           font-size: 2em;
+                           font-variation-settings: "slnt" 0, "wght" 700;
+                           line-height: 1em; }
+.contact h4 {              color: $swatch03;
+                           margin: 0px;}
 .contact ul li {           line-height: 1.5em; }
 
 .centertext {              text-align: center; }
@@ -112,4 +128,5 @@ h2 {           font-size: 1.3em; }
                margin-top: 6px;  }
 .acrylic {     width: 98%; }
 .main-nav ul{  flex-direction: column; }
-.md {          padding: 10px 20px; } }
+.md {          padding: 10px 10px; }
+.contact {     padding: 10px 10px; } }

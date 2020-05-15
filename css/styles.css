@@ -27,6 +27,9 @@
   line-height: normal;
   box-sizing: border-box; }
 
+h1, h2, h3, h4, h5 {
+  font-weight: normal; }
+
 body {
   background-image: url("../images/bg-stars.png"), linear-gradient(to right, #2e4f6b, #5982a6);
   background-attachment: fixed;
@@ -129,6 +132,10 @@ p {
 .contact img {
   max-width: 300px; }
 
+.contact br {
+  height: 0px;
+  line-height: 0px; }
+
 .contact h1 {
   text-align: center;
   font-family: "epilogue";
@@ -140,10 +147,22 @@ p {
   background: #B9BF10; }
 
 .contact h2 {
+  background: #A0A1A2;
+  color: #fbfbfb;
   font-size: 2em;
+  line-height: 1em;
+  padding: 10px 20px;
   font-variation-settings: "slnt" 0, "wght" 600; }
 
 .contact h3 {
+  color: #009BDE;
+  margin: 50px 0px 0px 0px;
+  font-size: 2em;
+  font-variation-settings: "slnt" 0, "wght" 700;
+  line-height: 1em; }
+
+.contact h4 {
+  color: #009BDE;
   margin: 0px; }
 
 .contact ul li {
@@ -179,6 +198,9 @@ p {
     flex-direction: column; }
 
   .md {
-    padding: 10px 20px; } }
+    padding: 10px 10px; }
+
+  .contact {
+    padding: 10px 10px; } }
 
 /*# sourceMappingURL=styles.css.map */
