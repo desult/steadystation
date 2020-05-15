@@ -59,21 +59,40 @@ p {                   line-height: 1.4em;}
 
 
 
-.md {                 padding: 20px 60px; }
-.md img {             max-width: 300px; }
-.md h1 {              text-align: center;
-                      font-family: "epilogue";
-                      font-size: 2.5em;
-                      font-variation-settings: "slnt" 0, "wght" 650;
-                      padding: 10px;
-                      line-height: 1;
-                      color: $snow;
-                      background: $swatch02; }
-.md h2, h3, h4, h5,{  font-family: "epilogue"; }
-.md h3 {              margin: 0px; }
-.md ul li {           line-height: 1.5em; }
+.md {                      padding: 20px 60px; }
+.md img {                  max-width: 300px; }
+.md h1 {                   text-align: center;
+                           font-family: "epilogue";
+                           font-size: 2.5em;
+                           font-variation-settings: "slnt" 0, "wght" 650;
+                           padding: 10px;
+                           line-height: 1;
+                           color: $snow;
+                           background: $swatch02; }
+.md h3 {                   margin: 0px; }
+.md ul li {                line-height: 1.5em; }
 
-.centertext {         text-align: center; }
+.centertext {              text-align: center; }
+
+
+
+
+.contact {                 padding: 20px 60px; }
+.contact img {             max-width: 300px; }
+.contact h1 {              text-align: center;
+                           font-family: "epilogue";
+                           font-size: 2.5em;
+                           font-variation-settings: "slnt" 0, "wght" 650;
+                           padding: 10px;
+                           line-height: 1;
+                           color: $snow;
+                           background: $swatch02; }
+.contact h2 {              font-size: 2em;
+                           font-variation-settings: "slnt" 0, "wght" 600;}
+.contact h3 {              margin: 0px; }
+.contact ul li {           line-height: 1.5em; }
+
+.centertext {              text-align: center; }
 
 
 
