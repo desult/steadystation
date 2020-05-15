@@ -10,6 +10,9 @@
 @media only screen and (max-width: 700px) {
   .header {
     display: block; } }
+@media only screen and (max-width: 500px) {
+  .header img {
+    width: 200px; } }
 @font-face {
   font-family: 'camboregular';
   src: url("../fonts/cambo/cambo-regular-webfont.woff2") format("woff2"), url("../fonts/cambo/cambo-regular-webfont.woff") format("woff");
@@ -58,24 +61,8 @@ p {
   padding: 20px;
   width: 900px; }
 
-.widebutton {
-  background-color: #264159;
-  color: #009BDE;
-  text-align: center;
-  margin: 5px; }
-
-.widebutton a {
-  display: block;
-  padding: 15px; }
-
-.widebutton a:link {
-  color: white; }
-
-.widebutton a:visited {
-  color: white; }
-
-.widebutton a:hover {
-  background-color: #aaac39; }
+.header p {
+  margin: 0px; }
 
 .main-nav {
   margin-bottom: 0px; }
@@ -121,12 +108,20 @@ p {
   text-align: center;
   font-family: "epilogue";
   font-size: 2.5em;
-  font-variation-settings: "slnt" 0, "wght" 450;
-  margin: 0px;
-  line-height: 1; }
+  font-variation-settings: "slnt" 0, "wght" 650;
+  padding: 10px;
+  line-height: 1;
+  color: #fbfbfb;
+  background: #B9BF10; }
 
 .md h2, h3, h4, h5 {
   font-family: "epilogue"; }
+
+.md h3 {
+  margin: 0px; }
+
+.md ul li {
+  line-height: 1.5em; }
 
 .centertext {
   text-align: center; }
@@ -156,9 +151,6 @@ p {
 
   .main-nav ul {
     flex-direction: column; }
-
-  .header img {
-    width: 250px; }
 
   .md {
     padding: 10px 20px; } }

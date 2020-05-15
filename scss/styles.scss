@@ -26,20 +26,12 @@ p {                   line-height: 1.4em;}
 .acrylic {            color: $snow;
                       margin: 20px auto;
                       padding: 20px;
-                      width: 900px;}
+                      width: 900px; }
+.header p {           margin: 0px; }
 
 
-.widebutton {         background-color: hsl($hue01, 40, 25);
-                      color: $swatch03;
-                      text-align: center;
-                      margin: 5px;}
 
-.widebutton a {       display: block;
-                      padding: 15px;}
 
-.widebutton a:link {    color: white; }
-.widebutton a:visited { color: white; }
-.widebutton a:hover {   background-color: hsl($hue02, 50, 45);}
 
 .main-nav {           margin-bottom: 0px;}
 .main-nav ul{         display: flex;
@@ -64,15 +56,22 @@ p {                   line-height: 1.4em;}
 .main-nav ul li.selected > a {    background-color: hsl($hue02, 50, 45);
                                    color: white; }
 
-.md {                 padding: 20px 60px;}
-.md img {             max-width: 300px;}
+
+
+
+.md {                 padding: 20px 60px; }
+.md img {             max-width: 300px; }
 .md h1 {              text-align: center;
                       font-family: "epilogue";
                       font-size: 2.5em;
-                      font-variation-settings: "slnt" 0, "wght" 450;
-                      margin: 0px;
-                      line-height: 1;}
-.md h2, h3, h4, h5,{  font-family: "epilogue";}
+                      font-variation-settings: "slnt" 0, "wght" 650;
+                      padding: 10px;
+                      line-height: 1;
+                      color: $snow;
+                      background: $swatch02; }
+.md h2, h3, h4, h5,{  font-family: "epilogue"; }
+.md h3 {              margin: 0px; }
+.md ul li {           line-height: 1.5em; }
 
 .centertext {         text-align: center; }
 
@@ -94,5 +93,4 @@ h2 {           font-size: 1.3em; }
                margin-top: 6px;  }
 .acrylic {     width: 98%; }
 .main-nav ul{  flex-direction: column; }
-.header img {  width: 250px; }
 .md {          padding: 10px 20px; } }
