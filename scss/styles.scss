@@ -2,18 +2,19 @@
 @import "header.scss";
 @import "fonts.scss";
 
-* {           font-family: sans-serif;
-              box-sizing: border-box;}
+* {                   font-family: "epilogue", sans-serif;
+                      font-variation-settings: "wdth" 0, "wght" 400;
+                      line-height: normal;
+                      box-sizing: border-box; }
 
-body {        background-image: url("../images/bg-stars.png"), linear-gradient(to right, hsl($hue01, 40, 30), hsl($hue01, 30, 50));
-              background-attachment: fixed;
-              color: $textcolor; }
-a {           text-decoration: none;}
-a:link {      color: $swatch03;}
-a:visited {   color: $swatch03;}
-a:hover {     color: lighten($swatch03, 10%)}
-h1 {          margin-bottom: 30px;}
-p {           line-height: 1.4em;}
+body {                background-image: url("../images/bg-stars.png"), linear-gradient(to right, hsl($hue01, 40, 30), hsl($hue01, 30, 50));
+                      background-attachment: fixed;
+                      color: $textcolor; }
+a {                   text-decoration: none;}
+a:link {              color: $swatch03;}
+a:visited {           color: $swatch03;}
+a:hover {             color: lighten($swatch03, 10%)}
+p {                   line-height: 1.4em;}
 
 .paper {              background-color: $snow;
                       margin: 20px auto;
@@ -27,36 +28,7 @@ p {           line-height: 1.4em;}
                       padding: 20px;
                       width: 900px;}
 
-.minipage {           background-color: white;
-                      margin: 5px;
-                      padding-top: 30px;
-                      border-top-right-radius: 50px;
-                      box-shadow: 1px 10px 15px hsla($hue01, 5, 10, .1);}
 
-.minipage h3{         text-align: center;}
-
-// .miniclear {          border: 1px solid red;}
-
-.iconholder {         margin: 0px auto;
-                      text-align: center;
-                      max-width: 50%; }
-
-.card {               background-color: $snow;
-                      width: 100%;
-                      margin: auto;
-                      margin-top: 10px;
-                      margin-bottom: 10px;
-                      padding: 15px;
-                      border: 4px solid $swatch04;
-                      box-shadow: 0px 4px 15px hsla($hue01, 5, 10, .2);}
-.card h1 {            background-color: $swatch04;
-                      color: white;
-                      font-weight: normal;
-                      padding: 5px;
-                      margin-top: 0px;
-                      margin-bottom: 20px;}
-.card img {           border: 5px solid $swatch04;
-                      border-radius: 100%;}
 .widebutton {         background-color: hsl($hue01, 40, 25);
                       color: $swatch03;
                       text-align: center;
@@ -95,96 +67,32 @@ p {           line-height: 1.4em;}
 .md {                 padding: 20px 60px;}
 .md img {             max-width: 300px;}
 .md h1 {              text-align: center;
-                      font-family: "camboregular"}
-.md h2, h3, h4, h5,{  font-family: "camboregular"}
-
-
-.map {                height: 600px;}
+                      font-family: "epilogue";
+                      font-size: 2.5em;
+                      font-variation-settings: "slnt" 0, "wght" 450;
+                      margin: 0px;
+                      line-height: 1;}
+.md h2, h3, h4, h5,{  font-family: "epilogue";}
 
 .centertext {         text-align: center; }
 
-.largelink a {        display: block;
-                      background-color: $swatch03;
-                      color: white;
-                      padding: 50px;}
 
 
 
-
-/* Helper Classes */
-.clientlogos {              padding: 0px 40px;}
-.clientlogos h1 {           text-align: center;}
-
-/* Dropdown CSS */
-.main-nav ul li {position: relative;}
-.main-nav ul li ul {
-    position: absolute;
-    background-color: red;
-    min-width: 100%;
-    text-align: left;
-    z-index: 999;
-    display: none;
-}
-.main-nav ul li ul li {
-    display: block;
-}
-/* Dropdown CSS */
-.main-nav ul li ul ul {
-    left: 100%;
-    top: 0;
-}
-/* Active on Hover */
-.main-nav li:hover > ul {
-    display: block;
-}
-/* Child Indicator */
-.main-nav .has-children > a {
-    padding-right: 30px;
-}
-.main-nav .has-children > a:after {
-    font-family: FontAwesome;
-    content: '\f107';
-    position: absolute;
-    display: inline-block;
-    right: 8px;
-    top: 0; }
-
-.main-nav .has-children .has-children > a:after { content: '\f105'; }
-
-.form-field {        margin: 5px 0px;}
-form input {         padding: 10px;
-                     width: 100%;
-                     margin-bottom: 20px; }
-form textarea {      padding: 10px;
-                     width: 100%;
-                     margin-bottom: 20px;
-                     resize: vertical;
-                     height: 200px;}
-
-form button {       padding: 10px 15px;
-                    background-color: $swatch02;
-                    color: white;
-                    border: 0px; }
-form button:hover { background-color: lighten($swatch02, 5%);
-                    box-shadow: 0px 2px 10px hsla($hue01, 5, 10, .2); }
-
-float-left {        float: left;}
 
 @media only screen and (max-width: 940px) {
-.paper {      width: 90%;}
-.acrylic {    width: 90%;}
-.map {        height: 400px;} }
+.paper {      width: 90%; }
+.acrylic {    width: 90%; } }
 
 @media only screen and (max-width: 700px) {
-.md iframe {  width: 100%;} }
+.md iframe {  width: 100%; } }
 
 @media only screen and (max-width: 500px) {
 h1 {           font-size: 1.5em; }
 h2 {           font-size: 1.3em; }
 .paper {       width: 98%;
                margin-top: 6px;  }
-.acrylic {     width: 98%;}
-.map {         height: 300px; }
+.acrylic {     width: 98%; }
 .main-nav ul{  flex-direction: column; }
 .header img {  width: 250px; }
-.md {          padding: 10px 20px;} }
+.md {          padding: 10px 20px; } }
