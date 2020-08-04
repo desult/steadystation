@@ -51,9 +51,9 @@
                 <img src="{{ base_url_relative }}/user/pages/images/logo.svg" alt="logo"/> <!-- {{ config.site.title }} -->  </a>
             </div>
             <div class="headerinfo">
-              <p><a href="tel:+1-{{ config.site.phone }}">{{ config.site.phone }}</a> </p>
-                <p>{{ config.site.address_01 }} </p>
-                <p>{{ config.site.address_02 }}</p>
+              <p><a href="tel:+1-{{ config.themes.steadystation.phone }}">{{ config.themes.steadystation.phone }}</a> </p>
+                <p>{{ config.themes.steadystation.address_01 }} </p>
+                <p>{{ config.themes.steadystation.address_02 }}</p>
             </div>
           </div>
       {% endblock %}
@@ -97,7 +97,7 @@
 {% block footer %}
     <div class="acrylic centertext">
       <div>
-        <p> {{ config.site.footer }} </p> <BR>
+        <p> {{ config.themes.steadystation.footer }} </p> <BR>
       </div>
     </div>
 {% endblock %}
