@@ -6,9 +6,9 @@ A Grav theme.
 
 ## Things to add to config/site.yaml
 
-These are strings that the theme uses. Keys and values need to be added to the site's configuration YAML file.
+These are strings that the theme uses. Keys and values need to be added to the site's configuration YAML file.  
 
-phone:
-address_01:
-address_02:
-footer:
+phone:  
+address_01:  
+address_02:  
+footer:  
