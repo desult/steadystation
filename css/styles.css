@@ -95,14 +95,14 @@ p {
   box-shadow: 0px 0px 8px rgba(177, 180, 8, 0.2); }
 
 .main-nav ul li a:hover {
-  background-color: #aaac39; }
+  background-color: #B9BF10; }
 
 .main-nav ul li.selected > a {
-  background-color: #aaac39;
+  background-color: #B9BF10;
   color: white; }
 
 .md {
-  padding: 20px 60px; }
+  padding: 0px 0px 20px 0px; }
 
 .md img {
   max-width: 300px; }
@@ -112,13 +112,17 @@ p {
   font-family: "epilogue";
   font-size: 2.5em;
   font-variation-settings: "slnt" 0, "wght" 650;
-  padding: 10px;
+  padding: 20px;
+  margin: 0px 0px 50px 0px;
   line-height: 1;
   color: #fbfbfb;
   background: #B9BF10; }
 
-.md h3 {
-  margin: 0px; }
+.md p, h2, h3, h4 {
+  margin: 0px 80px; }
+
+.md ul {
+  padding: 0px 100px; }
 
 .md ul li {
   line-height: 1.5em; }
@@ -179,7 +183,10 @@ p {
     width: 90%; } }
 @media only screen and (max-width: 700px) {
   .md iframe {
-    width: 100%; } }
+    width: 100%; }
+
+  .md p, h2, h3, h4 {
+    margin: 0px 40px; } }
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 1.5em; }
@@ -198,7 +205,10 @@ p {
     flex-direction: column; }
 
   .md {
-    padding: 10px 10px; }
+    padding: 0px; }
+
+  .md p, h2, h3, h4 {
+    margin: 0px 20px; }
 
   .contact {
     padding: 10px 10px; } }
