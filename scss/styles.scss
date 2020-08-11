@@ -45,14 +45,14 @@ p {                   line-height: 1.4em;}
 .main-nav ul li {     flex: 1;
                       font-size: 1.2em;
                       text-align: center;
-                      background-color: hsl($hue01, 40, 25);}
+                      background-color: $swatch01; }
 .main-nav ul li a {   display: block;
                       line-height: 45px;
                       color: white;
                       padding: 0 20px;
-                      white-space: nowrap;}
+                      white-space: nowrap; }
 
-.main-nav ul li:hover {  box-shadow: 0px 0px 8px hsla($hue02, 91, 37, .2);}
+.main-nav ul li:hover {    box-shadow: 0px 0px 8px hsla($hue02, 91, 37, .2);} //Shadow
 .main-nav ul li a:hover {  background-color: $swatch02; }
 
 .main-nav ul li.selected > a {    background-color: $swatch02;
@@ -62,6 +62,8 @@ p {                   line-height: 1.4em;}
 
 
 .md {                      padding: 0px 0px 20px 0px; }
+.md a {                    line-height: 0px; }
+
 .md img {                  max-width: 300px; }
 .md h1 {                   text-align: center;
                            font-family: "epilogue";
@@ -71,47 +73,44 @@ p {                   line-height: 1.4em;}
                            margin: 0px 0px 50px 0px;
                            line-height: 1;
                            color: $snow;
-                           background: $swatch02; }
-.md p, h2, h3, h4 {           margin: 0px 80px; }
-.md ul {                   padding: 0px 100px; }
+                           background: $swatch04; }
+
+.md h2 {                   font-variation-settings: "slnt" 0, "wght" 550;
+                           color: $snow;
+                           background: $swatch04;
+                           padding: 0px 80px; }
+.md h3 {                   font-variation-settings: "slnt" 0, "wght" 350;
+                           background: $swatch04;
+                           color: $snow;
+                           line-height: 1em;
+                           margin: 30px 0px;
+                           padding: 10px 80px;
+                           font-variation-settings: "slnt" 0, "wght" 600;}
+.md h4 {                   color: $swatch01;
+                           margin: 50px 0px 0px 0px;
+                           font-size: 2em;
+                           font-variation-settings: "slnt" 0, "wght" 500;
+                           line-height: 1em; }
+
+.md h5 {                   font-size: .9em;
+                           color: $swatch01;
+                           margin: 0px; }
+
+
+.md p, h2, h3, h4, h5, h6 {    padding: 0px 80px; }
+.md ul {                       padding: 0px 100px; }
+.md ul li {                    line-height: 1.5em; }
+
+
+.centertext {              text-align: center; }
+
+.md br {                   height: 0px;
+                           line-height: 0px;}
 .md ul li {                line-height: 1.5em; }
 
 .centertext {              text-align: center; }
 
-
-
-
-.contact {                 padding: 20px 60px; }
-.contact img {             max-width: 300px; }
-.contact br {              height: 0px;
-                           line-height: 0px;}
-.contact h1 {              text-align: center;
-                           font-family: "epilogue";
-                           font-size: 2.5em;
-                           font-variation-settings: "slnt" 0, "wght" 650;
-                           padding: 10px;
-                           line-height: 1;
-                           color: $snow;
-                           background: $swatch02; }
-
-.contact h2 {              background: $swatch04;
-                           color: $snow;
-                           font-size: 2em;
-                           line-height: 1em;
-                           padding: 10px 20px;
-                           font-variation-settings: "slnt" 0, "wght" 600;}
-
-.contact h3 {              color: $swatch03;
-                           margin: 50px 0px 0px 0px;
-                           font-size: 2em;
-                           font-variation-settings: "slnt" 0, "wght" 700;
-                           line-height: 1em; }
-.contact h4 {              color: $swatch03;
-                           margin: 0px;}
-.contact ul li {           line-height: 1.5em; }
-
-.centertext {              text-align: center; }
-
+.md iframe {               margin-top: 80px;}
 
 
 
@@ -121,8 +120,7 @@ p {                   line-height: 1.4em;}
 .acrylic {    width: 90%; } }
 
 @media only screen and (max-width: 700px) {
-.md iframe {  width: 100%; }
-.md p, h2, h3, h4 {    margin: 0px 40px; } }
+.md p, .md h2, .md h3, .md h4, .md h5, .md h6 {    padding-left: 50px; } }
 
 @media only screen and (max-width: 500px) {
 h1 {           font-size: 1.5em; }
@@ -132,5 +130,5 @@ h2 {           font-size: 1.3em; }
 .acrylic {     width: 98%; }
 .main-nav ul{  flex-direction: column; }
 .md {          padding: 0px; }
-.md p, h2, h3, h4 {    margin: 0px 20px; }
+.md p, .md h2, .md h3, .md h4, .md h5, .md h6  { padding-left: 20px; }
 .contact {     padding: 10px 10px; } }

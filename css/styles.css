@@ -82,7 +82,7 @@ p {
   flex: 1;
   font-size: 1.2em;
   text-align: center;
-  background-color: #264159; }
+  background-color: #003B71; }
 
 .main-nav ul li a {
   display: block;
@@ -104,6 +104,9 @@ p {
 .md {
   padding: 0px 0px 20px 0px; }
 
+.md a {
+  line-height: 0px; }
+
 .md img {
   max-width: 300px; }
 
@@ -116,10 +119,37 @@ p {
   margin: 0px 0px 50px 0px;
   line-height: 1;
   color: #fbfbfb;
-  background: #B9BF10; }
+  background: #A0A1A2; }
 
-.md p, h2, h3, h4 {
-  margin: 0px 80px; }
+.md h2 {
+  font-variation-settings: "slnt" 0, "wght" 550;
+  color: #fbfbfb;
+  background: #A0A1A2;
+  padding: 0px 80px; }
+
+.md h3 {
+  font-variation-settings: "slnt" 0, "wght" 350;
+  background: #A0A1A2;
+  color: #fbfbfb;
+  line-height: 1em;
+  margin: 30px 0px;
+  padding: 10px 80px;
+  font-variation-settings: "slnt" 0, "wght" 600; }
+
+.md h4 {
+  color: #003B71;
+  margin: 50px 0px 0px 0px;
+  font-size: 2em;
+  font-variation-settings: "slnt" 0, "wght" 500;
+  line-height: 1em; }
+
+.md h5 {
+  font-size: .9em;
+  color: #003B71;
+  margin: 0px; }
+
+.md p, h2, h3, h4, h5, h6 {
+  padding: 0px 80px; }
 
 .md ul {
   padding: 0px 100px; }
@@ -130,50 +160,18 @@ p {
 .centertext {
   text-align: center; }
 
-.contact {
-  padding: 20px 60px; }
-
-.contact img {
-  max-width: 300px; }
-
-.contact br {
+.md br {
   height: 0px;
   line-height: 0px; }
 
-.contact h1 {
-  text-align: center;
-  font-family: "epilogue";
-  font-size: 2.5em;
-  font-variation-settings: "slnt" 0, "wght" 650;
-  padding: 10px;
-  line-height: 1;
-  color: #fbfbfb;
-  background: #B9BF10; }
-
-.contact h2 {
-  background: #A0A1A2;
-  color: #fbfbfb;
-  font-size: 2em;
-  line-height: 1em;
-  padding: 10px 20px;
-  font-variation-settings: "slnt" 0, "wght" 600; }
-
-.contact h3 {
-  color: #009BDE;
-  margin: 50px 0px 0px 0px;
-  font-size: 2em;
-  font-variation-settings: "slnt" 0, "wght" 700;
-  line-height: 1em; }
-
-.contact h4 {
-  color: #009BDE;
-  margin: 0px; }
-
-.contact ul li {
+.md ul li {
   line-height: 1.5em; }
 
 .centertext {
   text-align: center; }
+
+.md iframe {
+  margin-top: 80px; }
 
 @media only screen and (max-width: 940px) {
   .paper {
@@ -182,11 +180,8 @@ p {
   .acrylic {
     width: 90%; } }
 @media only screen and (max-width: 700px) {
-  .md iframe {
-    width: 100%; }
-
-  .md p, h2, h3, h4 {
-    margin: 0px 40px; } }
+  .md p, .md h2, .md h3, .md h4, .md h5, .md h6 {
+    padding-left: 50px; } }
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 1.5em; }
@@ -207,8 +202,8 @@ p {
   .md {
     padding: 0px; }
 
-  .md p, h2, h3, h4 {
-    margin: 0px 20px; }
+  .md p, .md h2, .md h3, .md h4, .md h5, .md h6 {
+    padding-left: 20px; }
 
   .contact {
     padding: 10px 10px; } }
