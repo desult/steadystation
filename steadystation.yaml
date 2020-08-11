@@ -2,7 +2,7 @@ enabled: true
 dropdown:
   enabled: true
 
-phone: (229) 242-0674
-address_01: 3102 Joseph Road
-address_02: Valdosta, GA 31602
-footer: American Diversity - Valdosta, GA
+phone:
+address_01:
+address_02:
+footer:
