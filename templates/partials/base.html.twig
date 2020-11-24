@@ -88,12 +88,34 @@
 
 
 
+        {% block footer %}
+            <div class="grid3">
+                <div class="grid3__child">
+                    <p>{{ config.themes.steadystation.footer }}</p>
+                </div>
+                <div class="grid3__child">
+                </div>
+                <div class="grid3__child">
+
+                    {% if not grav.user.username %}
+                    <p><a href="/login">Login</a></p>
+                    {% endif %}
+                    {% if config.plugins.login.enabled and grav.user.username %}
+                    <p><a href="/admin">Admin Page</a></p>
+                    <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>
+                    {% endif %}
+                </div>
+            </div>
+        {% endblock %}
+
 
 
     </div>
 {% endblock main %}
 
 
+
+{#
 {% block footer %}
     <div class="acrylic centertext">
       <div>
@@ -101,6 +123,8 @@
       </div>
     </div>
 {% endblock %}
+#}
+
 
 
 {% block bottom %}
