@@ -28,12 +28,16 @@
         {% do assets.addCss('theme://css/styles.css', 98) %}
         {% do assets.addCss('theme://css/custom.css', 97) %}
     {% endblock %}
-    {{ assets.css() }}
-
+    
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
     {% endblock %}
-    {{ assets.js() }}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
+    {% endblock %}
+
 {% endblock head %}
 </head>
 
