@@ -28,7 +28,7 @@
         {% do assets.addCss('theme://css/styles.css', 98) %}
         {% do assets.addCss('theme://css/custom.css', 97) %}
     {% endblock %}
-    
+
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
     {% endblock %}
@@ -84,12 +84,8 @@
       {% endif %}
       -->
 
-
-
-
         {% block content %}
         {% endblock %}
-
 
 
         {% block footer %}
@@ -117,17 +113,6 @@
     </div>
 {% endblock main %}
 
-
-
-{#
-{% block footer %}
-    <div class="acrylic centertext">
-      <div>
-        <p> {{ config.themes.steadystation.footer }} </p> <BR>
-      </div>
-    </div>
-{% endblock %}
-#}
 
 
 
