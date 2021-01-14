@@ -112,7 +112,8 @@ p {
 .grid-item {
   background: #fbfbfb;
   border-radius: 3px;
-  box-shadow: 1px 10px 15px rgba(24, 26, 27, 0.4); }
+  box-shadow: 1px 10px 15px rgba(24, 26, 27, 0.4);
+  padding-bottom: 10px; }
 
 .grid-item-img-box {
   width: 100%; }
