@@ -102,6 +102,37 @@ p {
   background-color: #B9BF10;
   color: white; }
 
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #A0A1A2;
+  padding: 10px; }
+
+.grid-item {
+  background: #fbfbfb;
+  border-radius: 3px;
+  box-shadow: 1px 10px 15px rgba(24, 26, 27, 0.4); }
+
+.grid-item-img-box {
+  width: 100%; }
+
+.grid-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 100%;
+  object-fit: contain; }
+
+.grid-item h5 {
+  margin: 5px;
+  padding: 3px; }
+
+.grid-item p {
+  margin: 5px;
+  font-size: .9rem; }
+
 .md {
   padding: 0px 0px 20px 0px; }
 
@@ -191,10 +222,16 @@ p {
     width: 90%; }
 
   .acrylic {
-    width: 90%; } }
+    width: 90%; }
+
+  .grid-section {
+    grid-template-columns: 1fr 1fr 1fr; } }
 @media only screen and (max-width: 700px) {
   .md p, .md h2, .md h3, .md h4, .md h5, .md h6 {
-    padding-left: 50px; } }
+    padding-left: 50px; }
+
+  .grid-section {
+    grid-template-columns: 1fr 1fr; } }
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 1.5em; }

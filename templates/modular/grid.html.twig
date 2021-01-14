@@ -1,0 +1,22 @@
+{# WORK IN PROGRESS - NO PRODUCTION READY #}
+
+{# MODULAR #}
+
+
+    {{ content|raw }}
+
+    <div class="grid-section">
+
+        {% for p in page.collection %}
+            <div class="grid-item">
+                {# <a href="{{ p.url|e }}"> #}
+                    <h5>{{ p.title|e }}</h5>
+                {# </a> #}
+                <div class="grid-item-img-box">
+                    {{ p.media['sample.jpg'].cropResize(500, 500)|raw }}
+                </div>
+                {# }{{ p.summary|raw }} #}
+            </div>
+        {% endfor %}
+
+    </div>
