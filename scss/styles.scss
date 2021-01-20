@@ -163,7 +163,6 @@ p {                   line-height: 1.4em;}
 
 
 
-
 @media only screen and (max-width: 940px) {
 .paper {      width: 90%; }
 .acrylic {    width: 90%; }
@@ -171,7 +170,7 @@ p {                   line-height: 1.4em;}
 }
 
 @media only screen and (max-width: 700px) {
-.md p, .md h2, .md h3, .md h4, .md h5, .md h6 {    padding-left: 50px; }
+.md p, .md h2, .md h3, .md h4, .md h5, .md h6 {    padding-left: 50px; padding-right: 50px; }
 .grid-section { grid-template-columns: 1fr 1fr; }
 }
 
@@ -183,6 +182,6 @@ h2 {           font-size: 1.3em; }
 .acrylic {     width: 98%; }
 .main-nav ul{  flex-direction: column; }
 .md {          padding: 0px; }
-.md p, .md h2, .md h3, .md h4, .md h5, .md h6  { padding-left: 20px; }
+.md p, .md h2, .md h3, .md h4, .md h5, .md h6  { padding-left: 20px; padding-right: 20px; }
 .contact {     padding: 10px 10px; }
 .grid3 {       grid-template-columns: 1fr; } }
