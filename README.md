@@ -1,4 +1,4 @@
-# hillhopper
+# Steady Station
 
 A Grav theme.  
 [getgrav.org](https://getgrav.org/)
