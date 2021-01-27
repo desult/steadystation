@@ -1,9 +1,12 @@
-@import 'variables.scss';
+@import "variables.scss";
 @import "header.scss";
 @import "fonts.scss";
+@import "module-heading.scss";
+@import "backgrounds.scss";
 
 * {                   font-family: "epilogue", sans-serif;
-                      font-variation-settings: "wdth" 0, "wght" 400;
+                      // slnt: -12 - 0 , wght: 100 - 900
+                      font-variation-settings: "slnt" 0, "wght" 400;
                       line-height: normal;
                       box-sizing: border-box; }
 

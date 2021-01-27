@@ -21,9 +21,24 @@
 @font-face {
   font-family: 'epilogue';
   src: url("../fonts/epilogue/epilogue[slnt,wght].woff2") format("woff2"); }
+.module-heading {
+  background-color: red;
+  background: repeating-linear-gradient(-44deg, #a0a1a2, #a0a1a2 5px, #9d9e9f 5px, #9d9e9f 10px);
+  color: white; }
+
+.module-heading h1 {
+  font-variation-settings: "slnt" 0, "wght" 550;
+  line-height: 2em;
+  font-size: 3em;
+  letter-spacing: .2em;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 8px;
+  text-align: center; }
+
 * {
   font-family: "epilogue", sans-serif;
-  font-variation-settings: "wdth" 0, "wght" 400;
+  font-variation-settings: "slnt" 0, "wght" 400;
   line-height: normal;
   box-sizing: border-box; }
 

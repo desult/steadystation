@@ -1,0 +1,17 @@
+@import 'variables.scss';
+
+$stripe1: 5px;
+$stripe2: 10px;
+
+$background01:
+    repeating-linear-gradient(-44deg,
+    hsla($hue04, 1, 63, 1),
+    hsla($hue04, 1, 63, 1) $stripe1,
+    darken(hsla($hue04, 1, 63, 1), 1%) $stripe1,
+    darken(hsla($hue04, 1, 63, 1), 1%) $stripe2),
+
+//    linear-gradient(180deg,
+//    hsl($hue04, 20, 20),
+//    hsl($hue04, 20, 10))
+
+    ;

@@ -1,0 +1,20 @@
+@import 'variables.scss';
+@import 'backgrounds.scss';
+
+.module-heading {
+    background-color: red;
+    background: $background01;
+    color: white;
+}
+
+
+.module-heading h1 {
+    font-variation-settings: "slnt" 0, "wght" 550;
+    line-height: 2em;
+    font-size: 3em;
+    letter-spacing: .2em;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 8px;
+    text-align: center;
+}
