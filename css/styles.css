@@ -36,6 +36,18 @@
   text-align: center;
   text-shadow: 1px 3px rgba(23, 26, 28, 0.2); }
 
+@media only screen and (max-width: 940px) {
+  .module-heading h1 {
+    font-size: 2em;
+    padding-top: 6px; } }
+@media only screen and (max-width: 700px) {
+  .module-heading h1 {
+    font-size: 1.8em;
+    padding-top: 5px; } }
+@media only screen and (max-width: 500px) {
+  .module-heading h1 {
+    font-size: 1.4em;
+    padding-top: 3px; } }
 * {
   font-family: "epilogue", sans-serif;
   font-variation-settings: "slnt" 0, "wght" 400;
