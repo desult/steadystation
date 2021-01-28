@@ -29,13 +29,12 @@
 .module-heading h1 {
   font-variation-settings: "slnt" 0, "wght" 550;
   line-height: 2em;
-  font-size: 3em;
-  letter-spacing: .2em;
-  text-indent: .1em;
+  font-size: 2.5em;
   padding: 0px;
   margin: 0px;
   padding-top: 8px;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 1px 3px rgba(23, 26, 28, 0.2); }
 
 * {
   font-family: "epilogue", sans-serif;
@@ -151,7 +150,7 @@ p {
   font-size: .9rem; }
 
 .md {
-  padding: 0px 0px 20px 0px; }
+  padding: 20px 0px 20px 0px; }
 
 .md a {
   line-height: 0px; }
