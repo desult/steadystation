@@ -4,9 +4,7 @@
 .module-heading {
     background-color: red;
     background: $background01;
-    color: white;
-}
-
+    color: white; }
 
 .module-heading h1 {
     font-variation-settings: "slnt" 0, "wght" 550;
@@ -16,15 +14,13 @@
     margin: 0px;
     padding-top: 8px;
     text-align: center;
-    text-shadow: 1px 3px hsla($hue01, 10, 10, .2);
-}
+    text-shadow: 1px 3px hsla($hue01, 10, 10, .2); }
 
 
 @media only screen and (max-width: 940px) {
 .module-heading h1 {
     font-size: 2em;
-    padding-top: 6px;
-}
+    padding-top: 6px; }
 }
 
 @media only screen and (max-width: 700px) {
