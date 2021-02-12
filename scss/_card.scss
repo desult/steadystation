@@ -1,0 +1,89 @@
+@import 'variables.scss';
+
+.card {       box-shadow: $shadow01;
+              width: 90%;
+              margin: auto;
+              margin-top: 50px;
+              margin-bottom: 50px;
+              padding: 60px 100px;
+              border-radius: 3px;
+              background: linear-gradient(to right,
+                          $swatch03 10%, white 10% 100%); }
+
+.card a {     line-height: 0px;
+              background-color: #f2f2f2;
+              padding: 4px 10px;
+              border-radius: 5px;
+              color: $swatch01;
+              margin-left: -10px; }
+
+.card a:link {     color: $swatch01; }
+.card a:visited {  color: $swatch03; }
+.card a:hover {    color: lighten($swatch03, 10%); }
+
+.card h1,
+.card h2,
+.card h3,
+.card h4 {    margin: 0px;
+              padding: 0px; }
+
+.card h1 {    line-height: 1em;
+              font-size: 2.8em;
+              font-variation-settings: "slnt" 0, "wght" 550; }
+
+.card h2 {    line-height: 2em;
+              font-size: 1.2em;
+              color: $swatch03;
+              font-variation-settings: "slnt" 0, "wght" 550; }
+
+
+.card p {     margin-bottom: 0px;
+              line-height: 2em;
+              margin-left: 10px; }
+
+
+.card br {    height: 0px;
+              line-height: 0px; }
+
+
+
+@media only screen and (max-width: 940px) {
+
+.card {       margin-top: 40px;
+              margin-bottom: 40px;
+              padding: 60px 80px;
+              background: linear-gradient(to right,
+                          $swatch03 8%, white 8% 100%); }
+
+.card h1 {    line-height: 1em;
+              font-size: 2.2em;}
+
+.card h2 {    line-height: 2em;
+              font-size: 1em; }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+.card {       margin-top: 40px;
+              margin-bottom: 40px;
+              padding: 30px 40px;
+              background: linear-gradient(to right,
+                          $swatch03 5%, white 5% 100%); }
+
+.card h1 {    line-height: 1em;
+              font-size: 2.2em; }
+
+.card h2 {    line-height: 2em;
+              font-size: 1em; }
+}
+
+@media only screen and (max-width: 500px) {
+
+.card {       padding: 15px 20px;
+              background: linear-gradient(to right,
+                          $swatch03 3%, white 3% 100%); }
+
+.card h1 {    line-height: 1em;
+              font-size: 1.9em;}
+}

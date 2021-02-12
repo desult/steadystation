@@ -58,44 +58,36 @@
   max-width: 300px; }
 
 .md h1 {
-  text-align: center;
-  font-family: "epilogue";
   font-size: 2.5em;
   font-variation-settings: "slnt" 0, "wght" 650;
-  padding: 20px;
-  margin: 0px 0px 50px 0px;
-  line-height: 1;
-  color: #fbfbfb;
-  background: #A0A1A2; }
+  line-height: 1.2em;
+  margin-bottom: 20px; }
 
 .md h2 {
-  font-variation-settings: "slnt" 0, "wght" 550;
-  color: #fbfbfb;
-  background: #A0A1A2;
-  padding: 0px 80px; }
+  font-size: 2.3em;
+  font-variation-settings: "slnt" 0, "wght" 600;
+  line-height: 1.15em;
+  margin-bottom: 20px; }
 
 .md h3 {
-  font-variation-settings: "slnt" 0, "wght" 350;
-  background: #A0A1A2;
-  color: #fbfbfb;
-  line-height: 1em;
-  margin: 30px 0px;
-  padding: 10px 80px;
-  font-variation-settings: "slnt" 0, "wght" 600; }
+  font-size: 2em;
+  font-variation-settings: "slnt" 0, "wght" 550;
+  line-height: 1.15em;
+  margin-bottom: 20px; }
 
 .md h4 {
-  color: #003B71;
-  margin: 50px 0px 0px 0px;
-  font-size: 2em;
+  font-size: 1.8em;
   font-variation-settings: "slnt" 0, "wght" 500;
-  line-height: 1em; }
+  line-height: 1.2em;
+  margin-bottom: 15px; }
 
 .md h5 {
-  font-size: .9em;
-  color: #003B71;
-  margin: 0px; }
+  font-size: 1.5em;
+  font-variation-settings: "slnt" 0, "wght" 450;
+  line-height: 1.2em;
+  margin-bottom: 00px; }
 
-.md p, h2, h3, h4, h5, h6 {
+.md p, h1, h2, h3, h4, h5, h6 {
   padding: 0px 80px; }
 
 .md ul {
@@ -125,6 +117,96 @@
   .md p, .md h2, .md h3, .md h4, .md h5, .md h6 {
     padding-left: 20px;
     padding-right: 20px; } }
+.card {
+  box-shadow: 1px 10px 15px rgba(24, 26, 27, 0.4);
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 60px 100px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #009BDE 10%, white 10% 100%); }
+
+.card a {
+  line-height: 0px;
+  background-color: #f2f2f2;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #003B71;
+  margin-left: -10px; }
+
+.card a:link {
+  color: #003B71; }
+
+.card a:visited {
+  color: #009BDE; }
+
+.card a:hover {
+  color: #12b7ff; }
+
+.card h1,
+.card h2,
+.card h3,
+.card h4 {
+  margin: 0px;
+  padding: 0px; }
+
+.card h1 {
+  line-height: 1em;
+  font-size: 2.8em;
+  font-variation-settings: "slnt" 0, "wght" 550; }
+
+.card h2 {
+  line-height: 2em;
+  font-size: 1.2em;
+  color: #009BDE;
+  font-variation-settings: "slnt" 0, "wght" 550; }
+
+.card p {
+  margin-bottom: 0px;
+  line-height: 2em;
+  margin-left: 10px; }
+
+.card br {
+  height: 0px;
+  line-height: 0px; }
+
+@media only screen and (max-width: 940px) {
+  .card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 60px 80px;
+    background: linear-gradient(to right, #009BDE 8%, white 8% 100%); }
+
+  .card h1 {
+    line-height: 1em;
+    font-size: 2.2em; }
+
+  .card h2 {
+    line-height: 2em;
+    font-size: 1em; } }
+@media only screen and (max-width: 700px) {
+  .card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px 40px;
+    background: linear-gradient(to right, #009BDE 5%, white 5% 100%); }
+
+  .card h1 {
+    line-height: 1em;
+    font-size: 2.2em; }
+
+  .card h2 {
+    line-height: 2em;
+    font-size: 1em; } }
+@media only screen and (max-width: 500px) {
+  .card {
+    padding: 15px 20px;
+    background: linear-gradient(to right, #009BDE 3%, white 3% 100%); }
+
+  .card h1 {
+    line-height: 1em;
+    font-size: 1.9em; } }
 * {
   font-family: "epilogue", sans-serif;
   font-variation-settings: "slnt" 0, "wght" 400;

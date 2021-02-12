@@ -4,6 +4,7 @@
 @import "module-heading.scss";
 @import "backgrounds.scss";
 @import "md.scss";
+@import "card.scss";
 
 * {                   font-family: "epilogue", sans-serif;
                       // slnt: -12 - 0 , wght: 100 - 900
@@ -17,10 +18,11 @@ body {                background-image: url("../images/bg-stars.png"), linear-gr
                       background-attachment: fixed;
                       color: $textcolor; }
 a {                   text-decoration: none;
-                      line-height: 100%; }
+                      line-height: 100%;
+                      }
 a:link {              color: $swatch03; }
 a:visited {           color: $swatch03; }
-a:hover {             color: lighten($swatch03, 10%)}
+a:hover {             color: lighten($swatch03, 10%); }
 p {                   line-height: 1.4em;}
 
 

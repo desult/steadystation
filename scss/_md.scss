@@ -5,40 +5,35 @@
 .md a {                    line-height: 0px; }
 
 .md img {                  max-width: 300px; }
-.md h1 {                   text-align: center;
-                           font-family: "epilogue";
-                           font-size: 2.5em;
+
+.md h1 {                   font-size: 2.5em;
                            font-variation-settings: "slnt" 0, "wght" 650;
-                           padding: 20px;
-                           margin: 0px 0px 50px 0px;
-                           line-height: 1;
-                           color: $snow;
-                           background: $swatch04; }
+                           line-height: 1.2em;
+                           margin-bottom: 20px; }
 
-.md h2 {                   font-variation-settings: "slnt" 0, "wght" 550;
-                           color: $snow;
-                           background: $swatch04;
-                           padding: 0px 80px; }
-.md h3 {                   font-variation-settings: "slnt" 0, "wght" 350;
-                           background: $swatch04;
-                           color: $snow;
-                           line-height: 1em;
-                           margin: 30px 0px;
-                           padding: 10px 80px;
-                           font-variation-settings: "slnt" 0, "wght" 600;}
-.md h4 {                   color: $swatch01;
-                           margin: 50px 0px 0px 0px;
-                           font-size: 2em;
+.md h2 {                   font-size: 2.3em;
+                           font-variation-settings: "slnt" 0, "wght" 600;
+                           line-height: 1.15em;
+                           margin-bottom: 20px; }
+
+.md h3 {                   font-size: 2em;
+                           font-variation-settings: "slnt" 0, "wght" 550;
+                           line-height: 1.15em;
+                           margin-bottom: 20px; }
+
+.md h4 {                   font-size: 1.8em;
                            font-variation-settings: "slnt" 0, "wght" 500;
-                           line-height: 1em; }
+                           line-height: 1.2em;
+                           margin-bottom: 15px; }
 
-.md h5 {                   font-size: .9em;
-                           color: $swatch01;
-                           margin: 0px; }
+.md h5 {                   font-size: 1.5em;
+                           font-variation-settings: "slnt" 0, "wght" 450;
+                           line-height: 1.2em;
+                           margin-bottom: 00px; }
 
-.md p, h2, h3, h4, h5, h6 {padding: 0px 80px; }
-.md ul {                   padding: 0px 100px; }
-.md ul li {                line-height: 1.5em; }
+.md p, h1, h2, h3, h4, h5, h6 { padding: 0px 80px; }
+.md ul {                        padding: 0px 100px; }
+.md ul li {                     line-height: 1.5em; }
 
 .md br {                   height: 0px;
                            line-height: 0px;}
