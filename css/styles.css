@@ -323,12 +323,16 @@ p {
 .centertext {
   text-align: center; }
 
+footer {
+  background-color: #003B71;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fbfbfb;
+  font-size: .9em; }
+
 .grid3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #003B71;
-  color: white;
-  font-size: .9em;
   padding-left: 50px;
   padding-right: 50px; }
 

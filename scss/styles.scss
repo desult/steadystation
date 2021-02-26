@@ -99,15 +99,23 @@ p {                   line-height: 1.4em;}
                            font-size: .9rem; }
 .centertext {              text-align: center; }
 
+
+footer {                   background-color: $swatch01;
+                           padding-top: 10px;
+                           padding-bottom: 10px;
+                           color: $snow;
+                           font-size: .9em;
+
+}
+
 .grid3 {                   display: grid;
                            grid-template-columns: 1fr 1fr 1fr;
-                           background-color: $swatch01;
-                           color: white;
-                           font-size: .9em;
                            padding-left: 50px;
                            padding-right: 50px;}
 
 .grid3__child {            padding: 5px; }
+
+
 
 .video iframe {
    display: block;

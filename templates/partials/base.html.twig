@@ -75,15 +75,40 @@
 
         {# -- -- PAGE CONTENT -- -- #}
 
-        {# {{ random_string(22) }} #}
 
         {% block footer %}
+
+        <footer>
+
+            <div class="centertext">
+                <p>{{ config.themes.steadystation.footer }}</p>
+            </div>
+
             <div class="grid3">
+
+                {# -- -- COLUMN 1 -- -- #}
                 <div class="grid3__child">
-                    <p>{{ config.themes.steadystation.footer }}</p>
+                    {# Hours #}
+                    {% if config.themes.steadystation.hours_01 %}
+                        <p>
+                            Hours: <BR>
+                            {{ config.themes.steadystation.hours_01 }} <BR>
+                            {% if config.themes.steadystation.hours_02 %}
+                                {{ config.themes.steadystation.hours_02 }} <BR>
+                            {% endif %}
+                            {% if config.themes.steadystation.hours_03 %}
+                                {{ config.themes.steadystation.hours_03 }}
+                            {% endif %}
+                        </p>
+                    {% endif %}
                 </div>
+
+                {# -- -- COLUMN 2 -- -- #}
                 <div class="grid3__child">
+
                 </div>
+
+                {# -- -- COLUMN 3 -- -- #}
                 <div class="grid3__child">
 
                     {% if not grav.user.username %}
@@ -94,7 +119,11 @@
                     <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>
                     {% endif %}
                 </div>
+
             </div>
+
+        </footer>
+
         {% endblock %}
 
 
