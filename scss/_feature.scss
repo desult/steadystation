@@ -1,0 +1,30 @@
+@import 'variables.scss';
+
+.feature {     background-color: $snow;
+               margin: 30px 30px auto;
+               margin-bottom: 30px;
+               padding: 10px;
+               background-size: cover;
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               height: 220px;
+               box-shadow: $shadow01; }
+
+.feature div { background-color: hsla(0, 0, 90, .87);
+               padding: 35px; }
+
+.feature h1 {  font-variation-settings: "slnt" 0, "wght" 570;
+               font-size: 3em;
+               padding: 0px;
+               margin: 0px;
+               line-height: 1em; }
+
+.feature p {   margin: 0px;
+               font-variation-settings: "slnt" 0, "wght" 500}
+
+
+
+
+@media only screen and (max-width: 940px) { }
+@media only screen and (max-width: 700px) { }
+@media only screen and (max-width: 500px) { }

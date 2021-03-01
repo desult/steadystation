@@ -207,6 +207,32 @@
   .card h1 {
     line-height: 1em;
     font-size: 1.9em; } }
+.feature {
+  background-color: #fbfbfb;
+  margin: 30px 30px auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 220px;
+  box-shadow: 1px 10px 15px rgba(24, 26, 27, 0.4); }
+
+.feature div {
+  background-color: rgba(230, 230, 230, 0.87);
+  padding: 35px; }
+
+.feature h1 {
+  font-variation-settings: "slnt" 0, "wght" 570;
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1em; }
+
+.feature p {
+  margin: 0px;
+  font-variation-settings: "slnt" 0, "wght" 500; }
+
 * {
   font-family: "epilogue", sans-serif;
   font-variation-settings: "slnt" 0, "wght" 400;
