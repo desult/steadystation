@@ -1,0 +1,16 @@
+{# MODULAR #}
+
+
+    {{ content|raw }}
+
+    <div class="image-grid">
+
+        {% for image in page.media.images %}
+            <div class="image-grid-item">
+                <div class="image-grid-item-img-box">
+                    {{ image.cropResize(500, 500)|raw }}
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>

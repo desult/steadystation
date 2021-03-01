@@ -6,6 +6,7 @@
 @import "md.scss";
 @import "card.scss";
 @import "feature.scss";
+@import "image-grid.scss";
 
 * {                   font-family: "epilogue", sans-serif;
                       // slnt: -12 - 0 , wght: 100 - 900
@@ -98,6 +99,7 @@ p {                   line-height: 1.4em;}
                            padding: 3px; }
 .grid-item p {             margin: 5px;
                            font-size: .9rem; }
+
 .centertext {              text-align: center; }
 
 
