@@ -124,7 +124,10 @@
     font-size: 1.4em; }
 
   .md h5 {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  .md ul {
+    padding: 0px 80px; } }
 @media only screen and (max-width: 500px) {
   .md {
     padding: 0px; }
@@ -146,7 +149,10 @@
     font-size: 1.2em; }
 
   .md h5 {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .md ul {
+    padding: 0px 60px; } }
 .card {
   box-shadow: 1px 10px 15px rgba(24, 26, 27, 0.4);
   width: 90%;
