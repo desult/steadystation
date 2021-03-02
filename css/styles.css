@@ -52,7 +52,25 @@
   padding: 20px 0px 20px 0px; }
 
 .md a {
-  line-height: 0px; }
+  color: #fbfbfb;
+  line-height: 0px;
+  background: #009BDE;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-variation-settings: "slnt" 0, "wght" 500;
+  box-shadow: 1px 10px 15px rgba(24, 26, 27, 0.4); }
+
+.md a:link {
+  color: white; }
+
+.md a:visited {
+  color: white; }
+
+.md a:hover {
+  background-color: #003B71; }
+
+.md a:active {
+  color: #A0A1A2; }
 
 .md img {
   max-width: 300px; }
