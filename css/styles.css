@@ -82,26 +82,26 @@
   margin-bottom: 20px; }
 
 .md h2 {
-  font-size: 2.3em;
-  font-variation-settings: "slnt" 0, "wght" 600;
-  line-height: 1.15em;
-  margin-bottom: 20px; }
-
-.md h3 {
   font-size: 2em;
   font-variation-settings: "slnt" 0, "wght" 550;
   line-height: 1.15em;
   margin-bottom: 20px; }
 
+.md h3 {
+  font-size: 1.6em;
+  font-variation-settings: "slnt" 0, "wght" 550;
+  line-height: 1.15em;
+  margin-bottom: 20px; }
+
 .md h4 {
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-variation-settings: "slnt" 0, "wght" 500;
   line-height: 1.2em;
   margin-bottom: 15px; }
 
 .md h5 {
-  font-size: 1.5em;
-  font-variation-settings: "slnt" 0, "wght" 450;
+  font-size: 1em;
+  font-variation-settings: "slnt" 0, "wght" 550;
   line-height: 1.2em;
   margin-bottom: 00px; }
 
