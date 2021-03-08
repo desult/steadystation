@@ -4,7 +4,7 @@ A Grav theme.
 [getgrav.org](https://getgrav.org/)
 
 
-## Things to do
+# Things to do
 Copy of the themes.steadystation.steadystation.yaml to config.themes.steadystation.yaml
 
 # Modules
@@ -21,6 +21,12 @@ This module was designed to function as contact cards, but can be used for vario
 
 ## Grid
 This module displays a collection of subpages as thumbnails with a title and an image. The image in the subpage's folder should be name sample.jpg to properly be found and display.
+
+## Image Grid
+This module fetches all images in the pages folder and displays them as a grid.
+
+## Feature
+A module with a title on the left, a body of text on the right and a background image. The title on left is durived from the page title. The paragraph on the right is durived from the page content, and the background image grabs an image named background.jpg in the same page folder.
 
 ## Video
 This module is designed to hold an embedded YouTube video.
