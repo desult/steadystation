@@ -45,6 +45,9 @@
                            margin-bottom: 00px; }
 
 .md p, h1, h2, h3, h4, h5, h6 { padding: 0px 80px; }
+.md p {                         padding-top: 10px;
+                                padding-bottom: 10px; }
+
 .md ul {                        padding: 0px 100px; }
 .md ul li {                     line-height: 1.5em; }
 
