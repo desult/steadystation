@@ -20,7 +20,14 @@ This will be the most used module second to the heading. This module has styled 
 This module was designed to function as contact cards, but can be used for various applications.
 
 ## Grid
-This module displays a collection of subpages as thumbnails with a title and an image. The image in the subpage's folder should be name sample.jpg to properly be found and display.
+This module displays a collection of subpages as thumbnails with a title and an image. The image in the subpage's folder should be name sample.jpg to properly be found and display.  
+
+Create a page collection in YAML:
+
+```
+content:
+    items: '@self.children'
+```
 
 ### Product
 Submodule for Grid. Place an image named sample.jpg in this folder.
