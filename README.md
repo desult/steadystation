@@ -22,6 +22,9 @@ This module was designed to function as contact cards, but can be used for vario
 ## Grid
 This module displays a collection of subpages as thumbnails with a title and an image. The image in the subpage's folder should be name sample.jpg to properly be found and display.
 
+### Product
+Submodule for Grid. Place an image named sample.jpg in this folder.
+
 ## Image Grid
 This module fetches all images in the pages folder and displays them as a grid.
 
