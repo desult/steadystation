@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+.grid-feature {            display: grid;
+                           grid-template-columns: 1fr 1fr 1fr;
+                           grid-gap: 10px;
+                           background-color: $snow;
+                           padding: 10px;
+                           margin-bottom: 30px; }
+
+.grid-feature-item {       background: $snow;
+                           border-radius: 3px;
+                           box-shadow: $shadow01;
+                           padding-bottom: 10px;
+                           background-size: cover;
+                           background-position: center;
+                           min-height: 200px;}
+
+.grid-feature-item h1 {    font-variation-settings: "slnt" 0, "wght" 500;
+                           color: $swatch01;
+                           background-color: hsla($hue01, 100, 100, .8);
+                           margin: 0px;
+                           padding: 8px;
+                           line-height: 1;
+                           font-size: 1.2em; }
+
+.grid-feature-item p {     margin: 5px;
+                           font-size: .9rem; }
+
+
+
+@media only screen and (max-width: 940px) { }
+
+@media only screen and (max-width: 700px) {
+.grid-feature { grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 500px) { }

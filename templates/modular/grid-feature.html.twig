@@ -1,0 +1,30 @@
+{# WORK IN PROGRESS - NO PRODUCTION READY #}
+
+{# MODULAR #}
+
+    <div class="md">
+        {{ content|raw }}
+    </div>
+
+    <div class="grid-feature md">
+
+        {% for p in page.collection %}
+            <div class="grid-feature-item" style="background-image: url('{{ p.url|e }}/feature.jpg')">
+                    <h1>{{ p.title|e }}</h5>
+                {# }{{ p.summary|raw }} #}
+            </div>
+        {% endfor %}
+
+    </div>
+
+
+
+
+
+
+
+
+
+{# <a href="{{ p.url|e }}"> #}
+
+{# {{ p.media['sample.jpg'].cropResize(500, 500)|raw }} #}

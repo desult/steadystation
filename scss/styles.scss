@@ -6,7 +6,9 @@
 @import "md.scss";
 @import "card.scss";
 @import "feature.scss";
+@import "grid.scss";
 @import "image-grid.scss";
+@import "grid-feature.scss";
 
 * {                   font-family: "epilogue", sans-serif;
                       // slnt: -12 - 0 , wght: 100 - 900
@@ -71,35 +73,6 @@ p {                   line-height: 1.4em;}
 .main-nav ul li.selected > a {    background-color: $swatch02;
                                    color: white; }
 
-
-
-
-
-.grid-section {            display: grid;
-                           grid-template-columns: 1fr 1fr 1fr 1fr;
-                           grid-gap: 10px;
-                           background-color: $swatch04;
-                           padding: 10px;}
-
-.grid-item {               background: $snow;
-                           border-radius: 3px;
-                           box-shadow: $shadow01;
-                           padding-bottom: 10px; }
-
-.grid-item-img-box {       width: 100%; }
-
-.grid-item img {           display: block;
-                           margin-left: auto;
-                           margin-right: auto;
-                           height: 200px;
-                           width: 100%;
-                           object-fit: contain; }
-
-.grid-item h5 {            margin: 5px;
-                           padding: 3px; }
-.grid-item p {             margin: 5px;
-                           font-size: .9rem; }
-
 .centertext {              text-align: center; }
 
 
@@ -133,7 +106,7 @@ footer {                   background-color: $swatch01;
 @media only screen and (max-width: 940px) {
 .paper {      width: 90%; }
 .acrylic {    width: 90%; }
-.grid-section { grid-template-columns: 1fr 1fr 1       fr; }
+.grid-section { grid-template-columns: 1fr 1fr 1fr; }
 }
 
 @media only screen and (max-width: 700px) {
