@@ -1,30 +1,38 @@
-{# WORK IN PROGRESS - NO PRODUCTION READY #}
-
 {# MODULAR #}
 
     <div class="md">
         {{ content|raw }}
     </div>
 
-    <div class="grid-feature md">
+
+    <div class="grid-feature">
 
         {% for p in page.collection %}
-            <div class="grid-feature-item" style="background-image: url('{{ p.url|e }}/feature.jpg')">
+
+            {% if p.header.link %}
+                <a href="{{ p.url|e }}">
+                    <div class="grid-feature-item" style="background-image: url('{{ p.url|e }}/feature.jpg')">
+                        <h1>{{ p.title|e }}</h5>
+                    </div>
+                </a>
+            {% else %}
+                <div class="grid-feature-item" style="background-image: url('{{ p.url|e }}/feature.jpg')">
                     <h1>{{ p.title|e }}</h5>
-                {# }{{ p.summary|raw }} #}
-            </div>
+                </div>
+            {% endif %}
+
         {% endfor %}
 
     </div>
 
 
 
-
-
-
+{# ---------------------------------------------------------------------- #}
 
 
 
 {# <a href="{{ p.url|e }}"> #}
 
 {# {{ p.media['sample.jpg'].cropResize(500, 500)|raw }} #}
+
+{# }{{ p.summary|raw }} #}

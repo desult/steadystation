@@ -379,6 +379,10 @@
   background-position: center;
   min-height: 200px; }
 
+.grid-feature-item:hover {
+  position: relative;
+  top: -1px; }
+
 .grid-feature-item h1 {
   font-variation-settings: "slnt" 0, "wght" 500;
   color: #003B71;
