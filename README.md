@@ -5,7 +5,7 @@ A Grav theme.
 
 
 # Things to do
-Copy of the themes.steadystation.steadystation.yaml to config.themes.steadystation.yaml
+Copy themes.steadystation.steadystation.yaml to config.themes.steadystation.yaml
 
 # Modules
 This theme has been reworked to use modular pages for every page. See below for brief desciption of how each module should be used.
