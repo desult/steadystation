@@ -8,7 +8,7 @@ A Grav theme.
 Copy of the themes.steadystation.steadystation.yaml to config.themes.steadystation.yaml
 
 # Modules
-This theme has been reworked to user modular pages for every page. See below for brief desciption of how each module should be used.
+This theme has been reworked to use modular pages for every page. See below for brief desciption of how each module should be used.
 
 ## Heading
 This module is designed to be the very first and top module in the page stack. It's meant to only contain a H1 tag.
