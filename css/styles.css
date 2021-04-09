@@ -13,6 +13,73 @@
 @media only screen and (max-width: 500px) {
   .header img {
     width: 200px; } }
+nav {
+  background: #003B71; }
+
+.main-nav {
+  margin-bottom: 0px; }
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  padding-left: 0px;
+  margin: 0; }
+
+.main-nav ul li {
+  flex: 1;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #003B71; }
+
+.main-nav ul li a {
+  display: block;
+  line-height: 45px;
+  color: white;
+  padding: 0 20px;
+  white-space: nowrap; }
+
+.main-nav ul li:hover {
+  box-shadow: 0px 0px 8px rgba(177, 180, 8, 0.2); }
+
+.main-nav ul li a:hover {
+  background-color: #B9BF10; }
+
+.main-nav ul li.selected > a {
+  background-color: #B9BF10;
+  color: white; }
+
+nav #navLinks {
+  display: flex;
+  justify-content: flex-end; }
+
+nav #hamburger {
+  display: none;
+  margin: 0px;
+  line-height: 0px;
+  padding: 10px 15px 10px 15px; }
+
+nav #hamburger:hover {
+  background-color: #B9BF10; }
+
+nav .hambox {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2em; }
+
+nav .hambox a {
+  color: white; }
+
+@media only screen and (max-width: 940px) {
+  .main-nav ul li a {
+    padding: 0 5px; } }
+@media only screen and (max-width: 700px) {
+  nav #navLinks {
+    display: none; }
+
+  nav #hamburger {
+    display: block; } }
 @font-face {
   font-family: 'camboregular';
   src: url("../fonts/cambo/cambo-regular-webfont.woff2") format("woff2"), url("../fonts/cambo/cambo-regular-webfont.woff") format("woff");
@@ -445,40 +512,6 @@ p {
 
 .header p {
   margin: 0px; }
-
-.main-nav {
-  margin-bottom: 0px; }
-
-.main-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  text-align: center;
-  padding-left: 0px;
-  margin: 0; }
-
-.main-nav ul li {
-  flex: 1;
-  font-size: 1.2em;
-  text-align: center;
-  background-color: #003B71; }
-
-.main-nav ul li a {
-  display: block;
-  line-height: 45px;
-  color: white;
-  padding: 0 20px;
-  white-space: nowrap; }
-
-.main-nav ul li:hover {
-  box-shadow: 0px 0px 8px rgba(177, 180, 8, 0.2); }
-
-.main-nav ul li a:hover {
-  background-color: #B9BF10; }
-
-.main-nav ul li.selected > a {
-  background-color: #B9BF10;
-  color: white; }
 
 .centertext {
   text-align: center; }

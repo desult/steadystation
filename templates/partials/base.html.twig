@@ -31,6 +31,7 @@
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://js/scripts.js', 100) %}
     {% endblock %}
 
     {% block assets deferred %}
@@ -62,9 +63,9 @@
           </div>
       {% endblock %}
 
+
       {% block header_navigation %}
-        <nav class="main-nav"> {% include 'partials/navigation.html.twig' %}
-        </nav>
+        {% include 'partials/navigation.html.twig' %}
       {% endblock %}
 
 
