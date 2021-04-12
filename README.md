@@ -29,7 +29,7 @@ content:
     items: '@self.children'
 ```
 
-Optional links to subpages, add this to YAML:
+Optional links to subpages, add this to sub-page YAML:
 
 ```
 link: true
@@ -48,7 +48,7 @@ content:
     items: '@self.children'
 ```
 
-Optional links to subpages, add this to YAML:
+Optional links to subpages, add this to sub-page YAML:
 
 ```
 link: true
