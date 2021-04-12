@@ -29,23 +29,29 @@ content:
     items: '@self.children'
 ```
 
-### Product
-Submodule for Grid. Place an image named sample.jpg in this folder.
-
-## Grid Feature
-This module displays a collection of subpages as thumbnails with a title and an image. The image in the subpage's folder should be name feature.jpg to properly be found and display.  
-
 Optional links to subpages, add this to YAML:
 
 ```
 link: true
 ```
 
+### Product
+Submodule for Grid. Place an image named sample.jpg in this folder.
+
+## Grid Feature
+This module displays a collection of subpages as thumbnails with a title and an image. The image in the subpage's folder should be name feature.jpg to properly be found and display.  
+
 Create a page collection in YAML:
 
 ```
 content:
     items: '@self.children'
+```
+
+Optional links to subpages, add this to YAML:
+
+```
+link: true
 ```
 
 ### Product
