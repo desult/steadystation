@@ -12,6 +12,7 @@
             {% if p.header.link %}
                 <a href="{{ p.url|e }}">
                     <div class="grid-item">
+                        <p>{{ p.header.title }}</p>
                         <div class="grid-item-img-box">
                             {{ p.media['sample.jpg'].cropResize(500, 500)|raw }}
                         </div>
@@ -19,6 +20,7 @@
                 </a>
             {% else %}
                 <div class="grid-item">
+                    <p>{{ p.header.title }}</p>
                     <div class="grid-item-img-box">
                         {{ p.media['sample.jpg'].cropResize(500, 500)|raw }}
                     </div>
