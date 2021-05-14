@@ -5,11 +5,11 @@ icon: rebel
 author:
   name: Dennis Rothfuss
   email: drothfuss@gmail.com
-homepage: none
+homepage: https://github.com/desult/steadystation
 demo: none
 keywords: grav, theme, etc
-bugs: https://github.com/{{ component.author.name|hyphenize }}/grav-theme-{{ component.name|hyphenize }}/issues
-readme: https://github.com/{{ component.author.name|hyphenize }}/grav-theme-{{ component.name|hyphenize }}/blob/develop/README.md
+bugs: https://github.com/desult/steadystation/issues
+readme: https://github.com/desult/steadystation#readme
 license: MIT
 
 form:
