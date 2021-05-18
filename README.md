@@ -6,6 +6,7 @@ A Grav theme.
 
 # Things to do
 Copy themes.steadystation.steadystation.yaml to config.themes.steadystation.yaml
+Hours and Address can be multiline. Format them line a list and the theme will iterate over the list.
 
 # Modules
 This theme has been reworked to use modular pages for every page. See below for brief desciption of how each module should be used.
