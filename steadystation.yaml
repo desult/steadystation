@@ -3,9 +3,10 @@ dropdown:
   enabled: true
 
 phone:
-address_01:
-address_02:
+address:
+    -
+    -
 footer:
-hours_01:
-hours_02:
-hours_03:
+hours:
+    -
+    -

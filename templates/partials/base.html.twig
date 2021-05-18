@@ -57,8 +57,14 @@
             </div>
             <div class="headerinfo">
               <p><a href="tel:+1-{{ config.themes.steadystation.phone }}">{{ config.themes.steadystation.phone }}</a> </p>
-                <p>{{ config.themes.steadystation.address_01 }} </p>
-                <p>{{ config.themes.steadystation.address_02 }}</p>
+                {# -- -- Address -- -- #}
+                {% if config.themes.steadystation.address %}
+                    <p>
+                    {% for line in  config.themes.steadystation.address %}
+                        {{ line }} <BR>
+                    {% endfor %}
+                    </p>
+                {% endif %}
             </div>
           </div>
       {% endblock %}
@@ -90,16 +96,12 @@
                 {# -- -- COLUMN 1 -- -- #}
                 <div class="grid3__child">
                     {# Hours #}
-                    {% if config.themes.steadystation.hours_01 %}
+                    {% if config.themes.steadystation.hours %}
                         <p>
                             Hours: <BR>
-                            {{ config.themes.steadystation.hours_01 }} <BR>
-                            {% if config.themes.steadystation.hours_02 %}
-                                {{ config.themes.steadystation.hours_02 }} <BR>
-                            {% endif %}
-                            {% if config.themes.steadystation.hours_03 %}
-                                {{ config.themes.steadystation.hours_03 }}
-                            {% endif %}
+                            {% for line in  config.themes.steadystation.hours %}
+                                {{ line }} <BR>
+                            {% endfor %}
                         </p>
                     {% endif %}
                 </div>
