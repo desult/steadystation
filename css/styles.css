@@ -185,13 +185,6 @@ nav .hambox a {
 .md ul li {
   line-height: 1.5em; }
 
-.md br {
-  height: 0px;
-  line-height: 0px; }
-
-.md ul li {
-  line-height: 1.5em; }
-
 .md iframe {
   margin-top: 80px; }
 
@@ -471,6 +464,10 @@ nav .hambox a {
   font-variation-settings: "slnt" 0, "wght" 400;
   line-height: normal;
   box-sizing: border-box; }
+
+br {
+  height: 0px;
+  line-height: 0px; }
 
 h1, h2, h3, h4, h5 {
   font-weight: normal; }
