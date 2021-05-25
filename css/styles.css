@@ -146,7 +146,8 @@ nav .hambox a {
   font-size: 2.5em;
   font-variation-settings: "slnt" 0, "wght" 650;
   line-height: 1.2em;
-  margin-bottom: 20px; }
+  margin-bottom: 5px;
+  margin-top: 50px; }
 
 .md h2 {
   font-size: 2em;
@@ -176,8 +177,9 @@ nav .hambox a {
   padding: 0px 80px; }
 
 .md p {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5px; }
 
 .md ul {
   padding: 0px 100px; }
@@ -187,6 +189,9 @@ nav .hambox a {
 
 .md iframe {
   margin-top: 80px; }
+
+strong {
+  line-height: 0px; }
 
 @media only screen and (max-width: 700px) {
   .md p, .md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
@@ -517,7 +522,7 @@ footer {
   background-color: #003B71;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 60px;
   color: #fbfbfb;
   font-size: .9em; }
 
