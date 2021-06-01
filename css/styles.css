@@ -244,9 +244,9 @@ strong {
   box-shadow: 1px 10px 15px rgba(24, 26, 27, 0.4);
   width: 90%;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 60px 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 100px;
   border-radius: 3px;
   background: linear-gradient(to right, #009BDE 10%, white 10% 100%); }
 
