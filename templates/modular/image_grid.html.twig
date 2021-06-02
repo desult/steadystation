@@ -1,8 +1,10 @@
 {# MODULAR #}
 
 
-    {{ content|raw }}
-
+    <div class="md">
+        {{ content|raw }}
+    </div>
+    
     <div class="image-grid">
 
         {% for image in page.media.images %}
