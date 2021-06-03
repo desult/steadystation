@@ -4,9 +4,9 @@
     <div class="md">
         {{ content|raw }}
     </div>
-    
-    <div class="image-grid">
 
+    {# Add "column" to page YAML front matter. 2-6 #}
+    <div class="image-grid grid-{{page.header.columns}}">
         {% for image in page.media.images %}
             <div class="image-grid-item">
                 <div class="image-grid-item-img-box">
