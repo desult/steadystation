@@ -360,8 +360,8 @@ strong {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
-  background-color: #A0A1A2;
-  padding: 20px 10px; }
+  background-color: #fbfbfb;
+  padding: 20px 80px; }
 
 .grid-item {
   background: #fbfbfb;
@@ -376,7 +376,7 @@ strong {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+  height: 160px;
   width: 100%;
   object-fit: contain; }
 

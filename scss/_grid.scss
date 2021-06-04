@@ -5,8 +5,8 @@
 .grid-section {            display: grid;
                            grid-template-columns: 1fr 1fr 1fr 1fr;
                            grid-gap: 10px;
-                           background-color: $swatch04;
-                           padding: 20px 10px; }
+                           background-color: $snow;
+                           padding: 20px 80px; }
 
 .grid-item {               background: $snow;
                            border-radius: 3px;
@@ -18,7 +18,7 @@
 .grid-item img {           display: block;
                            margin-left: auto;
                            margin-right: auto;
-                           height: 200px;
+                           height: 160px;
                            width: 100%;
                            object-fit: contain; }
 
