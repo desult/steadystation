@@ -13,7 +13,12 @@
             {% if p.header.link %}
                 <a href="{{ p.url|e }}">
                     <div class="grid-item">
-                        <p>{{ p.header.title }}</p>
+                        <div class="grid-card-header">
+                            <h1>{{ p.header.title }}</h1>
+                            {% if p.header.subtitle %}
+                                <h2>{{ p.header.subtitle }}</h2>
+                            {% endif %}
+                        </div>
                         <div class="grid-item-img-box">
                             {{ p.media['sample.jpg'].cropResize(500, 500)|raw }}
                         </div>
@@ -21,7 +26,12 @@
                 </a>
             {% else %}
                 <div class="grid-item">
-                    <p>{{ p.header.title }}</p>
+                    <div class="grid-card-header">
+                        <h1>{{ p.header.title }}</h1>
+                        {% if p.header.subtitle %}
+                            <h2>{{ p.header.subtitle }}</h2>
+                        {% endif %}
+                    </div>
                     <div class="grid-item-img-box">
                         {{ p.media['sample.jpg'].cropResize(500, 500)|raw }}
                     </div>
