@@ -8,6 +8,8 @@
                            background-color: $snow;
                            padding: 20px 80px; }
 
+.grid-section > * {        display: flex; }
+
 .grid-item {               display: flex;
                            flex-direction: column;
                            justify-content: space-between;
