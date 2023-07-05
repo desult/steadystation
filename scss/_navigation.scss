@@ -19,7 +19,7 @@ nav {                 background: $swatch01; }
                       padding: 0 20px;
                       white-space: nowrap; }
 
-.main-nav ul li:hover {    box-shadow: 0px 0px 8px hsla($hue02, 91, 37, .2);} //Shadow
+.main-nav ul li:hover {    box-shadow: 0px 0px 8px hsla($hue02, 91%, 37%, .2);} //Shadow
 .main-nav ul li a:hover {  background-color: $swatch02; }
 
 .main-nav ul li.selected > a {    background-color: $swatch02;

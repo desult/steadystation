@@ -23,7 +23,7 @@ br {                  height: 0px;
 
 h1, h2, h3, h4, h5 {  font-weight: normal; }
 
-body {                background-image: url("../images/bg-stars.png"), linear-gradient(to right, hsl($hue01, 40, 30), hsl($hue01, 30, 50));
+body {                background-image: url("../images/bg-stars.png"), linear-gradient(to right, hsl($hue01, 40%, 30%), hsl($hue01, 30%, 50%));
                       background-attachment: fixed;
                       color: $textcolor; }
 a {                   text-decoration: none;
